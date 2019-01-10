@@ -114,11 +114,63 @@
 // }
 // console.log(ReverseArr([5, 4, 3, 2, 1]))
 
-//Array Rotate (accepts an array and offset, shift array by offset and wrap around end values)
-function ArrayShift(arr, shiftby){
-	    
-}
+// //Array Rotate (accepts an array and offset, shift array by offset and wrap around end values)
+// function ArrayShift(arr, shiftby){
 
+
+
+
+
+
+
+// }
+
+// //Array: Filter Range (retain only values in a given range, in place, return original array)
+// function FilterRange(arr, min, max){
+// 	var position = 0
+// 	for(var i=0; i<arr.length; i++){
+// 		if(arr[i]>=min && arr[i]<=max){
+// 			arr[position]=arr[i]
+// 			position++
+// 		}
+// 	}
+// 	arr.length= position 
+// 	return arr
+// }
+// console.log(FilterRange([20, 4, 16, 8, 10, 5, 20], 1, 9))
+
+// //Array: Concat (create a function that accepts two arrays, return one array. with  all elements from the first array, followed by all elements from second. Do not alter original arrays)
+// function Concat(arr1, arr2){
+// 	var NewArray= []
+// 	for(var i= 0; i<arr1.length; i++){
+// 		NewArray.push(arr1[i])
+// 	}
+// 	for(var j= 0; j<arr2.length; j++){
+// 		NewArray.push(arr2[j])
+// 	}
+
+// 	return NewArray
+// }
+// console.log(Concat(["a", "b", "c"], [1, 2]))
+
+// //Skyline Heights
+// function Skyline(arr){
+// 	var position = 0
+// 	var baseline= 0
+// 	console.log(baseline)
+// 	for(var i= 0; i<arr.length; i++){
+// 		if(arr[i] > baseline){
+// 			console.log("arri",arr[i])
+// 			console.log("baseline", baseline)
+// 			baseline= arr[i]
+// 			arr[position]= baseline
+// 			position++
+// 		}
+// 	}
+// 	arr.length= position
+// 	return arr
+// }
+// console.log(Skyline([-1, 1, 1, 7, 3]))
 
 
 
