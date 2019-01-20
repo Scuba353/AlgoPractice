@@ -243,28 +243,146 @@
 // }
 // console.log(NLargest([42, 1, 4, 3.14, 7], 3))
 
-//Credit Card Validation
-// accept an array of digits of the card (13-19 numbers long)
-// Luhn Formula:
-// 1) Set aside the last digit; do not include it in these caculations until step 5
-// 2) Starting from the back, multiply the digits in odd positions (last, third to last ect) by 2 
-// 3) If any results are larger than 9, subtract 9 from them
-// 4) Add all numbers (not just odds) together
-// 5) Now add the last digit back in- the sum should be a multiple of 10
-function isCreditCardValid(digitArr){
-	//step 1
-	var last= digitArr[digitArr.length-1];
-	digitArr.length= digitArr.length-1;
-	//step 2
-	for(var i=digitArr.length-1; i> 0; i-2){
-		digitArr[i]=digitArr[i]*2
-		if(digitArr[i]>9){
-			digitArr[i]=digitArr[i]-9
-		}
-		console.log(digitArr)
-	}
+// //Credit Card Validation
+// // accept an array of digits of the card (13-19 numbers long)
+// // Luhn Formula:
+// // 1) Set aside the last digit; do not include it in these caculations until step 5
+// // 2) Starting from the back, multiply the digits in odd positions (last, third to last ect) by 2 
+// // 3) If any results are larger than 9, subtract 9 from them
+// // 4) Add all numbers (not just odds) together
+// // 5) Now add the last digit back in- the sum should be a multiple of 10
+// function isCreditCardValid(digitArr){
+// 	var sum=0;
+// 	//step 1
+// 	var last= digitArr[digitArr.length-1];
+// 	digitArr.length= digitArr.length-1;
+// 	//step 2
+// 	for(var i=digitArr.length-1; i>=0; i= i-2){
+// 		digitArr[i]=digitArr[i]*2
+// 		if(digitArr[i]>9){
+// 			digitArr[i]=digitArr[i]-9
+// 		}
+// 		//console.log(digitArr)
+// 	}
+// 	for(var a=0; a<digitArr.length; a++){
+// 		sum+= digitArr[a]
+// 		//console.log(sum)
+// 	}
+// 	sum+= last
+// 	//console.log(sum)
+// 	if(sum%10 == 0){
+// 		return true
+// 	}
+// 	else{
+// 		return false
+// 	}
+// }
+// isCreditCardValid([5, 2, 2, 8, 2])
+
+// //Array Shuffle
+// function Shuffle(arr){
+// 	for(var i =0; i<arr.length; i++){
+// 		var randspot= Math.floor(Math.random() * arr.length); 
+// 		var temp= arr[i]
+// 		arr[i]= arr[randspot]
+// 		arr[randspot]= temp
+// 	}
+// 	return arr
+// }
+// console.log(Shuffle([1, 2, 3, 4, 5]))
+
+// //Array: Remove Range (remove all values falling in the index range provided)
+// function RemoveRange(arr, min, max){
+// 	var maxEnd= max+1
+// 	for(var i=min; maxEnd<arr.length; i++){
+// 		arr[i]= arr[maxEnd]
+// 		maxEnd++
+// 	}
+// 	arr.length= max-min+1
+// 	return arr
+// }
+// console.log(RemoveRange([20, 30, 40, 50, 60, 70], 2, 4))
+
+//Intermediate Sums (after every 10th element add an additional element with the sum of the previous 10, add one final element at the end to include any remaining values)
+// function IntermediateSums(arr){
+// 	var countValuesAdded= 0;
+// 	var position= 0;
+// 	var sum= 0;
+// 	for(var i=0; i< arr.length; i++){
+// 		if(countValuesAdded == 10){
+// 			//add element and shift all right
+// 			for(var j= arr.length-1; j>=position; j--){
+// 				arr[j+1]= arr[j]
+// 			}
+// 			arr[position]=sum
+// 			countValuesAdded= 0
+// 			sum =0 
+// 			position++
+// 		}
+// 		else{
+// 			sum += arr[i]
+// 			countValuesAdded++
+// 			position++ 
+// 		}
+// 	}
+// 	arr[arr.length]=sum
+// 	return arr
+// }
+// console.log(IntermediateSums([ 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]))
+// console.log(IntermediateSums([ 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]))
+// console.log(IntermediateSums([ 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 0]))
+
+// //Double Trouble: given an array return array with each element listed twice in original order
+// function DoubleTrouble(arr){
+// 	arr.length= arr.length*2
+// 	var position= arr.length
+// 	//add element and shift all right
+// 	for(var j= arr.length/2 -1; j>=0; j--){
+// 		arr[position-1]= arr[j]
+// 		arr[position-2]= arr[j]
+// 		position=position -2
+// 	}
+// 	return arr
+// }
+// console.log(DoubleTrouble([4, "boo", 42, true]))
+
+//ZipIt; combind values from two arrays sequentially (both array idx 0, both idx 1... ect), create a new array
+function Zip(arr, arr2){
+	var zippedarr= []
+	for(var i=0; i<)
 }
-isCreditCardValid([5, 2, 2, 8, 2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
