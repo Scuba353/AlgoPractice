@@ -441,8 +441,8 @@
 		// console.log(ReverseString("creature"))
 
 	// //Remove even-length strings 
-	//["Nope!", "its", "kris", "starting", "with", "k!", "(instead", "of", "Chris", "with", "c)", "."]
-	//becomes ["Nope!", "its", "Chris", "."]
+	// ["Nope!", "its", "kris", "starting", "with", "k!", "(instead", "of", "Chris", "with", "c)", "."]
+	// becomes ["Nope!", "its", "Chris", "."]
 		// function RemoveEven(strArray){
 		// 	var count= 0
 		// 	for(var i=0; i<strArray.length; i++){
@@ -459,10 +459,50 @@
 		// }
 		// console.log(RemoveEven(["Nope!", "its", "kris", "starting", "with", "k!", "(instead", "of", "Chris", "with", "c)", "."]))
 
-	// //Integet to Roman Numeral
+	// //Integer to Roman Numeral
+	// positive integer 1-4000
+	// I= 1, V=5, X=10, L=50, C=100, D=500, M=1000
+		// function IntToRoman(int){
+		// 	var romanNum= ""
+		// 	var RomanKey= {M:1000, D:500, C:100, L:50, X:10, V:5, IV:4, I:1}
+		// 	for(var i in RomanKey){
+		// 		while(int>= RomanKey[i]){
+		// 			romanNum += i;
+		// 			int -= RomanKey[i]
+		// 		}
+		// 	}
+		// 	return romanNum
+		// }
+		// console.log(IntToRoman(444))
 
-
-
+	// //Parens Valid (always open before they close)
+	// function ParensValid(str){
+	// 	var position=0;
+	// 	var ticker= 0;
+	// 	// console.log(str[position])
+	// 	// console.log(str.length)
+	// 	while(position<str.length){
+	// 		if(str[position]== "("){
+	// 			// console.log("adding one")
+	// 			ticker++
+	// 		}
+	// 		if(str[position]== ")"){
+	// 			// console.log("subtracting one")
+	// 			ticker--		
+	// 			if(ticker== -1){
+	// 				// console.log("fast failing")
+	// 				return false
+	// 			}
+	// 		}
+	// 		position++
+	// 	}
+	// 	var result= (ticker == 0) ? true : false;
+	// 	return result
+	// }
+	// console.log(ParensValid("(AB)(C)"))
+	// console.log(ParensValid(")AB)(C)"))
+	// console.log(ParensValid("((AB))(C)"))
+	// console.log(ParensValid("(AB()C)"))
 
 
 
