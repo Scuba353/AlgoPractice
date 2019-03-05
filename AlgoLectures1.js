@@ -505,18 +505,162 @@
 	// console.log(ParensValid("(AB()C)"))
 
 
+	// //Balanced Brackets (determin if (){}[] in a string expression are balanced)
+	// 	function BracketsValid(str){
+	// 	var braces=[];
+	// 	var position= 0;
+	// 	// console.log(str[position])
+	// 	// console.log(str.length)
+	// 	while(position<str.length){
+	// 		if(str[position]== "(" || str[position]== "{" || str[position]== "[" ){
+	// 			braces.push(str[position])
+	// 		}
+	// 		if(str[position]== ")"){
+	// 			if(braces[braces.length-1]== "("){
+	// 				braces.pop()
+	// 			}
+	// 			else{
+	// 				return false
+	// 			}
+	// 		}
+	// 		if(str[position]== "}"){
+	// 			if(braces[braces.length-1]== "{"){
+	// 				braces.pop()
+	// 			}
+	// 			else{
+	// 				return false
+	// 			}
+	// 		}
+	// 		if(str[position]== "]"){
+	// 			if(braces[braces.length-1]== "["){
+	// 				braces.pop()
+	// 			}
+	// 			else{
+	// 				return false
+	// 			}
+	// 		}
+	// 		position++
+	// 	}
+	// 	var result= (braces.length == 0) ? true : false;
+	// 	return result
+	// }
+
+	// console.log(BracketsValid("W(a{t}s[o(n{ c}o)m]e )h[e{r}e]!"))
+	// console.log(BracketsValid("D(i{a}l[ t]o)n{e"))
+	// console.log(BracketsValid("A(l)s[O(n]O{t) O}k"))
+
+	// //Palindrome 
+	// function Palindrome(str){
+	// 	var endposition= str.length-1
+	// 	for(var i=0; i<str.length/2; i++){
+	// 		console.log(i)
+	// 		if(str[i]== str[endposition]){
+	// 			console.log(str[i])
+	// 			console.log(str[str.length-1])
+	// 			endposition--
+	// 			continue;
+	// 		}
+	// 		else{
+	// 			return false
+	// 		}
+	// 	}
+	// 	return true
+	// }
+	// console.log(Palindrome("racecar"))  //true
+	// console.log(Palindrome("oho!"))	//false
+	// console.log(Palindrome("Dud"))	//false
+	// console.log(Palindrome("a x a"))	//true
+
+	// //Longest Palindrome in a given string 
+	// function LongestPal(str){
 
 
 
 
+	// }
+
+	// //Is Word Alphabetical (are all vowels in alphabetical order) 
+	//assumptions made: double letters in succession are ok ex) athameiou --> true,  airline --> false
+	// function WordAlpha(str){
+	// 	var vowels= ["a", "e", "i", "o", "u"]
+	// 	var volposition= 0;
+	// 	for(var i=0; i<str.length; i++){
+	// 		if(str[i]== vowels[volposition]){
+	// 			volposition++
+	// 		}
+	// 	}
+	// 	//only reliable if all 5 vowels are present
+	// 	var result= (volposition==5) ? true : false
+	// 	return result
+	// }
+	// console.log(WordAlpha("athameiou"))
+
+	// //D gets Jiggy (accept a string name, rearrance ex: Dylan --> "Ylan to the D")
+	// function NameGreeting(str){
+	// 	var nameSplit= str.split("")
+	// 	var firstletter= nameSplit[0]
+	// 	var newName= []
+	// 	for(var i=1; i<str.length; i++){
+	// 		newName.push(str[i])
+	// 	}
+	// 	newName[0]= newName[0].toUpperCase()
+	// 	var joinName= newName.join("")
+
+	// 	return  joinName + " to the " + firstletter
+	// }
+	// console.log(NameGreeting("Dylan"))
+
+	// //Common Suffix (find the longest common suffix between given words)
+	// function CommonSuffix(){
+		
+	// }
+
+	// //Book Index (given sorted array [1, 13, 14, 15, 37, 38, 70] return an "index string" "1, 13-15, 37-38, 70")
+	// function BookIndex(){
+		
+	// }
+
+	// //Coin Change with Object
+	// function coinChange(cents){
+	// 	var US= {quarter: 25, dime: 10, nickle: 5, penny: 1}
+	// 	var change= {quarter:0, dime:0, nickle:0, penny:0}
+	// 	console.log(US["quarter"])
+	// 		var howMany= Math.floor(cents/(US["quarter"]))
+	// 		change["quarter"]=howMany
+	// 		cents= cents%US["quarter"]
+	// 		var howMany= Math.floor(cents/(US["dime"]))
+	// 		change["dime"]=howMany
+	// 		cents= cents%US["dime"]
+	// 		var howMany= Math.floor(cents/(US["nickle"]))
+	// 		change["nickle"]=howMany
+	// 		cents= cents%US["nickle"]
+	// 		var howMany= Math.floor(cents/(US["penny"]))
+	// 		change["penny"]=howMany
+	// 		cents= cents%US["penny"]
+	// 		return change
+	// }
+	// console.log(coinChange(54))
+
+	// //Max-Min-Avg with object
+	// function ObjMaxMinAvg(arr){
+	// 	var summary= {max: arr[0], min: arr[0], avg: arr[0]}
+	// 	for(var i=1; i<arr.length; i++){
+	// 		if(arr[i]> summary["max"]){
+	// 			summary["max"]=arr[i]
+	// 		}
+	// 		if(arr[i]< summary["min"]){
+	// 			summary["min"]=arr[i]
+	// 		}
+	// 		summary["avg"]+=arr[i]
+	// 	}
+	// 	summary["avg"]= summary["avg"]/arr.length
+	// 	return summary
+	// }
+	// console.log(ObjMaxMinAvg([1, 2, 3, 4, 5]))
 
 
 
-
-
-
-
-
+//Chapter 5: Linked List 
 
 
 
